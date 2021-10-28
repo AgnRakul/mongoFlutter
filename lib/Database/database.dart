@@ -22,6 +22,10 @@ class MongoDatabase {
   }
 
   static insert(Product product) async {
+    await userCollection.insertAll([product.toMap()]);
+  }
+
+  static update(Product product) async {
     var data = await userCollection.findOne({"_id": product.id});
     data["name"] = product.fruitName;
     data["details"] = product.fruitDetials;

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mongodbflutter/Database/database.dart';
-import 'package:mongodbflutter/Pages/add_product.dart';
+// import 'package:mongodbflutter/Pages/add_product.dart';
+import 'package:mongodbflutter/Pages/home_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const AddProduct(),
+      home: const HomePage(),
       // ),
     );
   }
